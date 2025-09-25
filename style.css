@@ -1,0 +1,141 @@
+ body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      background-color: #1dc5f4eb;
+    }
+
+    /* Header */
+    header {margin-bottom: 20px;
+      background-color: #afafb6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      padding: 15px 20px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    }
+
+    header h1 {
+      color: #fddc20;
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    #mode {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 8px 16px;
+      border: none;
+      background-color: #fddc20;
+      color: #0c0c7e;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    #mode:hover {
+      background-color: #ffe94d;
+      transform: translateY(-50%) scale(1.05);
+    }
+
+    /* Choices */
+    .choices {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 30px auto;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .choice {
+      margin-bottom: 20px;
+      border: 4px solid transparent; /* fix: keeps space for border */
+      border-radius: 15px;
+      width: 200px;
+      height: 240px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      transition: 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    }
+
+    .choice:hover {
+      transform: scale(1.05);
+      border-color: #fddc20; /* only border color changes */
+      cursor: pointer;
+    }
+
+    .choice img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 15px;
+    }
+
+    /* Scoreboard */
+    .scoreboard {
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      margin: 20px 0;
+    }
+
+    .score { margin: top 30px;
+      font-size: 22px;
+      font-weight: bold;
+      background: rgba(255,255,255,0.1);
+      padding: 15px 25px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+    }
+
+    /* Messages */
+    .message-container {
+      font-size: 1.2rem;
+      margin: 20px;
+    }
+
+    .msg {
+      background-color: #000;
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 12px;
+      width: fit-content;
+      margin: auto;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+    }
+/* Replay Button */
+#replay {
+  background-color: #ff9800;   /* Orange button */
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.3s;
+  display: none; /* hidden initially */
+}
+
+#replay:hover {
+  background-color: #f5d207; /* Darker orange on hover */
+  transform: scale(1.05);
+}
+
+
+
+
